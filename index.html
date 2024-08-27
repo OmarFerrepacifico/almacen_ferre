@@ -922,7 +922,7 @@ function btnMinformacion_name(){
 	
 				var arreglo=[];
 				var id =0;
-				$.get("reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
+				$.get("https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
 				function(htmlexterno){
                     console.log(htmlexterno);
 				var articulo=	htmlexterno[0][0].description ;
@@ -1180,7 +1180,7 @@ $(document).on('click', '.dato_nm', function(event) {
 	
 				var arreglo=[];
 				var id =0;
-				$.get("reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
+				$.get("https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
 				function(htmlexterno){
 				var articulo=	htmlexterno[0][0].description ;
 				id = htmlexterno[0][0].id;
