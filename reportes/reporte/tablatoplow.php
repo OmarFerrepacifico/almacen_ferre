@@ -1,5 +1,9 @@
 <?php
 
+header("Access-Control-Allow-Origin: *"); // Permitir todas las solicitudes de cualquier dominio
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS"); // Permitir métodos HTTP
+header("Access-Control-Allow-Headers: Content-Type"); // Permitir ciertos encabezados
+
 $curl = curl_init();
 
 $url = "http://corpo-fondeport-zkwpvgkhvbc.dynamic-m.com:8181/exsim/servicios/metodo/ARTICULOS/4P9prZ33S7WIy617wu29p076206j61/10/0/$id";
