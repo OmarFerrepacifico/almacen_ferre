@@ -919,13 +919,14 @@ function btnMinformacion_name(){
 	
 				var arreglo=[];
 				var id =0;
-				$.get("https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
+				$.get("https://cors-anywhere.herokuapp.com/https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablaTransaccionesDiariasporVendedores.php",{articulo:articulo},
 				function(htmlexterno){
                     console.log(htmlexterno);
 				var articulo=	htmlexterno[0][0].description ;
 				id = htmlexterno[0][0].id;
                 console.log(id);
-				$.get("https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablatoplow.php",{id:id},
+				
+				$.get("https://cors-anywhere.herokuapp.com/https://www.ferrepacifico.com.mx/almacen/Almacenes/vistas/reportes/reporte/tablatoplow.php"	,{id:id},
 				function(htmlexterno){
 
 					var data = JSON.parse(htmlexterno);
